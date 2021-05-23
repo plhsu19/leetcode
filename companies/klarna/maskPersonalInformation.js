@@ -15,7 +15,7 @@ const maskPersonalInfo = (info) => {
         if (!isNaN(char)) {
             count += 1;
         } else  // if the parsed char is a letter, mask the numbers before it if the consecutive number count > 5 
-            if (count > 5) {
+            if (count > 5) {               
                 for (let i = charList.length - count - 1; i < charList.length - 1; i++) {
                     charList[i] = '*';
                 }
@@ -39,6 +39,11 @@ const maskPersonalInfo = (info) => {
     return charList.join('');
 }
 
+const mask = (charList, count, lastIdx) => {
+    for (let i = lastIdx - count; i < lastIdx; i++) {
+        charList[i] = '*';
+    }
+}
 
 // unit test
 console.log(maskPersonalInfo('3985027e9A9gf88bdfg7777903df'));
