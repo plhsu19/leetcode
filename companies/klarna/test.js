@@ -1,6 +1,4 @@
-const a = null
+const array = [2, 3, 5];
 
-while(a) {
-    console.log('enter')
-}
-
+const objectSymbols = Object.getOwnPropertySymbols(array)
+console.log(typeof array[Symbol.iterator])

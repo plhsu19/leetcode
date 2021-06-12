@@ -62,7 +62,7 @@ function DFS(grid, i, j, visitedNodes, preDir, preNode) {
         if (DFS(grid, i, j - 1, visitedNodes, 'l', currentNode)) return true;
     }
 
-    // visited all children, goal is not found
+    // visited all children (adjacent vertices) of the node, goal is not found
     return false;
 }
 
@@ -92,6 +92,7 @@ function checkConnection(current, neighbor, dir) {
     }
     return false;
 }
+
 
 
 
