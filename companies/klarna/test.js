@@ -1,4 +1,13 @@
-const array = [2, 3, 5];
+const obj = {
+    'test': 'hello',
+    '(': 'world'
+}
 
-const objectSymbols = Object.getOwnPropertySymbols(array)
-console.log(typeof array[Symbol.iterator])
+obj['('] = ')'
+
+console.log(obj['test'])
+console.log(obj['('])
+
+
+
+
