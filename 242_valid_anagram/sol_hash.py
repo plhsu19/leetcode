@@ -16,6 +16,7 @@ class Solution:
             if count != 0:
                 return False
         return True
+        
     # solution 2: dict as hashtable, char as hash key
     # faster and less memory consumption solution
     def isAnagram(self, s: str, t: str) -> bool:

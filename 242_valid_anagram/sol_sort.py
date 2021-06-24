@@ -15,7 +15,7 @@ class Solution:
         return s_sorted == t_sorted
 
     # improved sort solution
-    def isAnagram(self, s: str, t: str) -> bool:
+    def isAnagram2(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
         
