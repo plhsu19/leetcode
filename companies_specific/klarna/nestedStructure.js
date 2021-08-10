@@ -1,14 +1,15 @@
+
 // object to be flattened
 const obj = {
-    data: '123',
+    data: 'oh',
     next: {
-        data: 'qwe',
+        data: 'hello',
         next: {
-            data: 12.7,
+            data: 'world',
             next: {
-                data: 'check',
+                data: '!',
                 next: {
-                    data: 33,
+                    data: '!',
                     next: null,
                 },
             },
