@@ -1,7 +1,2 @@
-let a = 'ro'
-    , b = 5
-    , r = ' test'
-    , c = a + ', ' + b + r
-
-console.log(c)
-console.log(a)
+let a = [3, 4]
+console.log(typeof a)
