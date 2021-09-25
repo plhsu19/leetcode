@@ -17,7 +17,7 @@
     let LCA;
 
     function findLca(node, low, hi) {
-        // base-condition not likely to happened
+        // base-condition not likely to happen
         if (node === null) return false;
         // real base-condition: when p.val and q.val is not in the range
         if ((p.val <= low || p.val >= hi) &&
